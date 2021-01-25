@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +11,12 @@
      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>{{title}}</span>
+    <span><button mat-button routerLink="/home" routerLinkActive="active">{{title}}</button></span>
+    <span class="vertical"><button mat-button routerLink="/users" routerLinkActive="active">Users</button></span>
+    <span class="vertical"><button mat-button routerLink="/books" routerLinkActive="active">Books</button></span>
     <span class="example-spacer"></span>
+    <span class="vertical"><button mat-button routerLink="/register" routerLinkActive="active">Register</button></span>
+    <span class="vertical"><button mat-button routerLink="/log-in" routerLinkActive="active">Log in</button></span>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
       <mat-icon>favorite</mat-icon>
     </button>
@@ -22,7 +25,8 @@
    </button>
   </mat-toolbar>
   </p>
-  <app-users></app-users>
-  <app-books></app-books>
+  <!-- <app-users></app-users>
+  <app-books></app-books> -->
+  <router-outlet></router-outlet>
 </body>
 </html>

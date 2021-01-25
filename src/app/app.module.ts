@@ -13,12 +13,16 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
+import { RegisterComponent } from './register/register.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    BooksComponent
+    BooksComponent,
+    RegisterComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
